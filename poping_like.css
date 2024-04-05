@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#constainer{
+    height: 400px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#constainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#constainer i{
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: transform ease 0.5s;
+    transform: translate(-50%,-50%) scale(0);
+}
